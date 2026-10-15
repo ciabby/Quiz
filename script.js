@@ -6,12 +6,17 @@ window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{
 
         var Q=[
             {q:"Ciao vitaaa, mh.. Domanda:",s:"Nel Plettro che ti ho dato c'era scritto qualcosa, cosa?",a:["Le Nostre Iniziali",'"Ti amo"',"Una data",'"Scusa"'],c:0,f:"Esatto, menomale che l'ho fatto"},
+            {q:"quiz timeee:",s:"Come stai?",a:["bene","male","c'è di meglio","non lo so"],c:0,f:"meglio la prima"},
+            {q:"Prova a indovinare",s:"Come mi piace chiamarti?",a:["Dura","vecchietta","vita","tutti i modi"],c:3,f:"era ovvio no?"},
             {q:"Vabbe, quella era semplice.. Andiamo hard:",s:"Chi cucina meglio?",a:["Nessuno dei due, Ovvio","Nina","Manu","Troppo semplice, entrambi"],c:2,f:"MI SEMBRA OVVIO CHE SONO IO"},
             {q:"OH.. BASTA EH, MO VERO HARD",s:"Quale soprannome ti do più spesso?",a:["Dura","Scema","Amore","Nina"],c:2,f:"Anche se non vorrei proprio chiamarti ma girarmi e averti qui..."},
+            {q:"non ho molta inventiva stasera... scusa",s:"Cosa dico per prenderti in giro?",a:["'Si dice stessa non solita","sei nana","non prendo mai in giro","'vecchietta'"],c:0,f:"lingua italiana"},
             {q:"Vabbe oh, Mi arrendo",s:"Il primo piatto che ti ho cucinato è:",a:["Pasta con salmone","Un Dolce","Non ho cucinato","Pollo e Bastoncini"],c:3,f:"Che fucking Cuoco eh hahaha"},
             {q:"Vabbe dai, questa è facile",s:"Il primo regalo che ti ho fatto è:",a:["Suonare per te","Una lettera","Un sito","Dei lego"],c:0,f:"Obbligato ma si.. "},
+            {q:"tutte le stai beccando...",s:"la mia paura piu grande in una relazione:",a:["essere tradito","essere lasciato","non riuscire a capirci","non essere all'altezza"],c:3,f:"lo dovresti sapere, immagino..."},
             {q:"Bello il giochino fin'ora?",s:"La prima cosa che ti ho detto quando ci siamo visti:",a:["Ti amo","Ciao nana","Sei bellissima","Ma chi sei?"],c:1,f:"Non dimenticherò mai quell'abbraccio..."},
             {q:"Le domande stanno per finire, sicura che sei pronta?",s:"Giorno 19/08/2026 ti ho dato qualcosa di unico:",a:["Un lego","Una Felpa","Una rosa","Dei lego"],c:2,f:"Di un colore leggero che ricorda la calma, proprio come te<3"},
+            {q:"Ci sei quasi",s:"La mia canzone preferita?",a:["Ti amo ~Luche","Crudelia ~Marracash","Poetica ~Cesare Cremonini","Lei è... ~Silent Bob"],c:3,f:"Mi parla di te... o quasi."},
             {q:"Penultima domanda, non ti preoccupare",s:"Il primo film che abbiamo visto insieme è:",a:["Non lo abbiamo visto","La forma della voce","Un passo dal cielo","Era un anime"],c:1,f:"Uno dei miei preferiti, e tu mi hai odiato per avertelo fatto vedere"},
             {q:"Ultima domanda. MA LA PIU IMPORTANTE",s:"La cosa che mi piace di piu di te è:",a:["Occhi","Culo (mhh, bello)","Carattere","Viso"],c:2,f:"Merda, so che stavi pensando a 'culo' ma no... Il tuo carattere mi ha preso, è unico<3"}
             ];
@@ -36,5 +41,10 @@ window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{
                         document.getElementById('nx').onclick=function(){i++;show()}
                     }
                 })
+            }
+            function lettera()
+            {
+                document.querySelector(".quiz").style.display="none";
+                document.querySelector(".lettera").style.display="inline";
             }
             show();
